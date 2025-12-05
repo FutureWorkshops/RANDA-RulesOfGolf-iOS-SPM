@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "RANDARulesOfGolf",
-            targets: ["RANDARulesOfGolf"]
+            targets: ["RANDARulesOfGolf", "RANDARulesOfGolfDependencies"]
         ),
     ],
     dependencies: [
@@ -24,6 +24,11 @@ let package = Package(
             name: "RANDARulesOfGolf",
             url: "https://s3.eu-west-2.amazonaws.com/randa.rog.sdk.ios/1.4.0/RANDARulesOfGolf.xcframework.zip",
             checksum: "b51db91015447a34f0a1213b180bed8c1983ae9d4b9b9f96cceea5f8803f6f6a"
+        ),
+        .target(
+            name: "RANDARulesOfGolfDependencies",
+            dependencies: ["DTCoreText", "DTFoundation", "NotificationBanner", "SwiftSoup"],
+            path: "Dependencies",
         )
     ]
 )
