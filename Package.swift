@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.8
 
 import PackageDescription
 
@@ -27,8 +27,13 @@ let package = Package(
         ),
         .target(
             name: "RANDARulesOfGolfDependencies",
-            dependencies: ["DTCoreText", "DTFoundation", "NotificationBanner", "SwiftSoup"],
-            path: "Dependencies",
+            dependencies: [
+                .product(name: "DTCoreText", package: "DTCoreText"),
+                .product(name: "DTFoundation", package: "DTFoundation"),
+                .product(name: "NotificationBannerSwift", package: "NotificationBanner"),
+                .product(name: "SwiftSoup", package: "SwiftSoup")
+            ],
+            path: "Dependencies"
         )
     ]
 )
