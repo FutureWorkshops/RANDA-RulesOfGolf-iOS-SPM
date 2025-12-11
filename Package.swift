@@ -22,8 +22,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "RANDARulesOfGolf",
-            url: "https://s3.eu-west-2.amazonaws.com/randa.rog.sdk.ios/1.4.1/RANDARulesOfGolf.xcframework.zip",
-            checksum: "262a91af1a17d59fe44225b1f4d7015a50c4ead1f9b2fdbeb5b9dcf7e2b04607"
+            url: "https://s3.eu-west-2.amazonaws.com/randa.rog.sdk.ios/1.4.2/RANDARulesOfGolf.xcframework.zip",
+            checksum: "b3baa7c503cb1913be9ec4622d37f09015c820b88dc8dd4381cdb03a5f404d33"
         ),
         .target(
             name: "RANDARulesOfGolfDependencies",
